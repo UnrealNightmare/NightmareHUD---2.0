@@ -1,6 +1,6 @@
 "Resource/UI/HudPlayerClass.res"
 {
-// player class data
+	// player class data
 	"HudPlayerClass"
 	{
 		"ControlName"	"EditablePanel"
@@ -17,27 +17,28 @@
 	{
 		"ControlName"	"CTFClassImage"
 		"fieldName"		"PlayerStatusClassImage"
-		"xpos"			"50"	[$WIN32]
-		"ypos"			"200"	[$WIN32]
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"xpos"			"165"	[$WIN32]
+		"ypos"			"r95"	[$WIN32]
+		"zpos"			"2"
+		"wide"			"35"
+		"tall"			"35"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"../hud/class_scoutred"
 		"scaleImage"	"1"	
+		"alpha"			"0"
 	}
 	"PlayerStatusSpyImage"
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyImage"
-		"xpos"			"3"		[$WIN32]
-		"ypos"			"r67"	[$WIN32]
+		"xpos"			"9999"		[$WIN32]
+		"ypos"			"9999"	[$WIN32]
 		"zpos"			"2"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"wide"			"55"
+		"tall"			"55"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"../hud/class_spyred"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/class_spyred"
@@ -47,72 +48,75 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyOutlineImage"
-		"xpos"			"3"		[$WIN32]
-		"ypos"			"r67"	[$WIN32]
+		"xpos"			"9999"	
+		"ypos"			"9999"	
 		"zpos"			"7"
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
-		"enabled"		"0"
+		"enabled"		"1"
 		"image"			"../hud/class_spy_outline"
-		"scaleImage"	""	
+		"scaleImage"	"1"	
 	}		
 	"PlayerStatusClassImageBG"
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBG"
-		"xpos"			"9"		[$WIN32]
-		"ypos"			"r60"	[$WIN32]
+		"xpos"			"9999"		[$WIN32]
+		"ypos"			"9999"	[$WIN32]
 		"zpos"			"1"		
 		"wide"			"100"
-		"tall"			"0"
-		"visible"		"0"
+		"tall"			"50"
+		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"
-		"image"			"../hud/character_red_bg"	
+		"image"			"../hud/character_red_bg"
+		"scaleImage"	"1"	
 		"teambg_2"		"../hud/character_red_bg"
 		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
 		"teambg_3"		"../hud/character_blue_bg"
 		"teambg_3_lodef"	"../hud/character_blue_bg_lodef"
 	}
+	
 	"classmodelpanelBG"
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"classmodelpanelBG"
-		"xpos"			"-1"		[$WIN32]
-		"ypos"			"r60"	[$WIN32]
-		"zpos"			"1"		
-		"wide"			"109"
-		"tall"			"0"
-		"visible"		"0"
+		"xpos"			"0"		[$WIN32]
+		"ypos"			"445"	[$WIN32]
+		"zpos"			"-9999"		
+		"wide"			"100"
+		"tall"			"25"
+		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"
 		"image"				"../hud/character_red_bg_clipped"	
-		"teambg_2"			"../hud/character_red_bg_clipped"
-		"teambg_2_lodef"	"../hud/character_red_bg_lodef_clipped"
-		"teambg_3"			"../hud/character_blue_bg_clipped"
-		"teambg_3_lodef"	"../hud/character_blue_bg_lodef_clipped"
+		"teambg_2"			"replay/thumbnails/bg_red"
+		"teambg_3"			"replay/thumbnails/bg_blue"
+		
+		"src_corner_height"		"24"				// pixels inside the image
+		"src_corner_width"		"24"
+		"draw_corner_height"	"0"
+		"draw_corner_width"		"0"
 	}
 
+	
 	"classmodelpanel"
 	{
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"classmodelpanel"
-		"xpos"			"c-300"	[$WIN32]
-		"ypos"			"r255"	[$WIN32]
-		"zpos"			"2"		
-		"wide"			"100"
-		"tall"			"200"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"2"
+		"wide"			"f0"
+		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		
 		"render_texture"	"0"
-		"fov"			"12"
+		"fov"			"13"
 		"allow_rot"		"1"
-
-		"disable_speak_event"	"1"
 				
 		"model"
 		{
@@ -190,199 +194,95 @@
 			{
 			}
 			"Scout"
-			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
-			}
+              {
+				"fov"                   "25"
+                                "angles_x"              "-4"
+                                "angles_y"              "233"
+                                "angles_z"              "0"
+                                "origin_x"              "920"
+                                "origin_y"              "184"
+                                "origin_z"              "-145"
+                        }
 			"Sniper"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-1"
+                                "angles_y"		"232"
+                                "angles_z"              "0"
+                                "origin_x"              "1000"
+                                "origin_y"              "199"
+                                "origin_z"              "-163"
 			}
 			"Soldier"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-3"
+                                "angles_y"              "202"
+                                "angles_z"              "-3"
+                                "origin_x"              "980"
+                                "origin_y"              "195"
+                                "origin_z"              "-145"
 			}
 			"Demoman"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-5"
+                                "angles_y"              "214"
+                                "angles_z"              "0"
+                                "origin_x"              "980"
+                                "origin_y"              "190"
+                                "origin_z"              "-149"
 			}
 			"Medic"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-2"
+                                "angles_y"              "220"
+                                "angles_z"              "0"
+                                "origin_x"              "970"
+                                "origin_y"              "190"
+                                "origin_z"              "-155"
 			}
 			"Heavy"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-5"
+                                "angles_y"              "216"
+                                "angles_z"              "0"
+                                "origin_x"              "1200"
+                                "origin_y"              "230"
+                                "origin_z"              "-170"
 			}
 			"Pyro"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-3"
+                                "angles_y"              "230"
+                                "angles_z"              "-10"
+                                "origin_x"              "980"
+                                "origin_y"              "200"
+                                "origin_z"              "-145"
 			}
 			"Spy"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-2"
+                                "angles_y"              "220"
+                                "angles_z"              "0"
+                                "origin_x"              "950"
+                                "origin_y"              "190"
+                                "origin_z"              "-155"
 			}
 			"Engineer"
 			{
-				"fov"			"25"
-				"angles_x"		"-10"
-				"angles_y"		"-170"
-				"angles_z"		"0"
-				"origin_x"		"200"
-				"origin_y"		"0"
-				"origin_z"		"-80"
+				"fov"                   "25"
+                                "angles_x"              "-10"
+                                "angles_y"              "210"
+                                "angles_z"              "-3"
+                                "origin_x"              "990"
+                                "origin_y"              "194"
+                                "origin_z"              "-150"
 			}
-		}
-	}
-
-	"CarryingWeapon"
-	{
-		"ControlName"			"EditablePanel"
-		"fieldName"				"CarryingWeapon"
-		"xpos"					"0"
-		"ypos"					"r24"
-		"zpos"					"100"
-		"wide"					"500"
-		"tall"	 				"25"
-
-		"CarryingBackground"
-		{
-			"ControlName"			"CTFImagePanel"
-			"fieldName"				"CarryingBackground"
-			"xpos"					"0"
-			"ypos"					"0"
-			"zpos"					"0"
-			"wide"					"150"
-			"tall"	 				"f0"
-			"autoResize"			"0"
-			"pinCorner"				"0"
-			"visible"				"1"
-			"enabled"				"1"
-			"image"					"../hud/color_panel_brown"
-			"scaleImage"			"1"
-			"teambg_1"				"../hud/color_panel_brown"
-			"teambg_2"				"../hud/color_panel_brown"
-			"teambg_3"				"../hud/color_panel_brown"
-			"proportionaltoparent"	"1"
-		
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			
-			"draw_corner_width"		"3"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"3"	
-		}
-
-		"CarryingLabel"
-		{	
-			"ControlName"		"CExLabel"
-			"fieldName"			"CarryingLabel"
-			"font"				"ReplayBrowserSmallest"
-			"xpos"				"5"
-			"ypos"				"3"
-			"zpos"				"1"
-			"wide"				"200"
-			"tall"	 			"f0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
-			"labelText"			"%carrying%"
-		}
-
-		"CarryingLabelDropShadow"
-		{	
-			"ControlName"		"CExLabel"
-			"fieldName"			"CarryingLabelDropShadow"
-			"font"				"ReplayBrowserSmallest"
-			"xpos"				"p0.011"
-			"ypos"				"p0.12"
-			"zpos"				"0"
-			"wide"				"200"
-			"tall"	 			"f0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
-			"fgcolor_override"	"FlameBlack"
-			"labelText"			"%carrying%"
-		}
-
-		"OwnerLabel"
-		{	
-			"ControlName"		"Label"
-			"fieldName"			"OwnerLabel"
-			"font"		"TFFontSmall"
-			"xpos"				"5"
-			"ypos"				"14"
-			"zpos"				"0"
-			"wide"				"f0"
-			"tall"	 			"f0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
 		}
 	}
 }

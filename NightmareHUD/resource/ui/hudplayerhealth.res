@@ -70,7 +70,7 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"NormalCode55"
+		"font"			"NormalCode48"
 		"fgcolor"		"HP"
 	}
 	"PlayerStatusHealthValueShadow"
@@ -86,7 +86,7 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"NormalCode55"
+		"font"			"NormalCode48"
 		"fgcolor"		"ShadowBlack"
 	}	
 	"GreyBarForHealth"

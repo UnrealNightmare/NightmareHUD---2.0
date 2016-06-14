@@ -35,7 +35,7 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"NormalCode55"
+		"font"			"NormalCode48"
 		"fgcolor"		"ChargePercent"
 	}
 	"ChargeLabelShadow"
@@ -56,7 +56,7 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"NormalCode55"
+		"font"			"NormalCode48"
 		"fgcolor"		"ShadowBlack"
 	}
 	"GreyBarForUber"
@@ -109,7 +109,7 @@
 		"textAlignment"	"west"
 		"dulltext"		"1"
 		"brighttext"	"1"
-		"font"			"NormalCode55"
+		"font"			"NormalCode48"
 		"fgcolor"		"ShadowBlack"
 	}
 	
